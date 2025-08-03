@@ -91,10 +91,10 @@ Default 실행 파일 경로 수정 필요
             "pipeTransport": {
                 "pipeProgram": "docker", // Docker를 통해 컨테이너에 접근
                 "pipeArgs": [
-                    "exec", 
-                    "-i", 
+                    "exec",
+                    "-i",
                     "spdm_container_${env:USER}", // 동적으로 사용자 이름 기반 컨테이너 이름 사용
-                    "sh", 
+                    "sh",
                     "-c"
                 ], // 컨테이너 내부에서 명령 실행
                 "debuggerPath": "/usr/bin/gdb" // 컨테이너 내부의 gdb 경로
@@ -107,7 +107,10 @@ Default 실행 파일 경로 수정 필요
 }
 ```
 
+## SPDM CPP
+It is just project for changing "c library" to "cpp library".
+
 ### Reference
-https://github.com/DMTF/libspdm  
-https://github.com/DMTF/spdm-emu  
+https://github.com/DMTF/libspdm
+https://github.com/DMTF/spdm-emu
 https://github.com/DMTF/spdm-dump
